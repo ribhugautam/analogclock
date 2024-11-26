@@ -2,20 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.hand {
+  height: 140px;
+  width: 4px;
+  transform-origin: center bottom;
+  transform: rotate(0deg);
+  position: absolute;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.clock {
+  background-color: #001219;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.clock__face {
+  border: 3px solid white;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+.hand--hours {
+  background: #ae2012;
+}
+
+.hand--minutes {
+  background: #e9d8a6;
+  width: 2px;
+}
+
+.hand--seconds {
+  background: #94d2bd;
+  width: 1px;
+  transform: rotate(360deg);
 }
