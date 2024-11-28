@@ -8,7 +8,7 @@ export default function Home() {
     const date = new Date();
 
     const time = Intl.DateTimeFormat("en-US", {
-      timeZone: timeZone,
+      timeZone: timeZone === "UTC" ? undefined : timeZone,
       hour: "numeric",
       minute: "numeric",
       second: "numeric",
@@ -38,15 +38,12 @@ export default function Home() {
 
   return (
     <div className="h-screen bg-black w-screen flex flex-col items-center gap-10 p-10 justify-center">
-
-      <h1 className="text-white font-bold text-3xl" >ANALOG CLOCK</h1>
-
+      <h1 className="text-white font-bold text-3xl">ANALOG CLOCK</h1>
       <div className="flex flex-col gap-2 justify-center items-center">
         <h3 className="text-white font-bold">Time Zone</h3>
-
         <select
           onChange={(e) => setTimeZone(e.target.value)}
-          className="text-black px-2 rounded-xl"
+          className="text-black text-center px-4 focus:outline-none py-1 rounded-xl"
         >
           <option value="UTC">Local Time</option>
           <option value="Europe/Andorra">Europe/Andorra</option>
@@ -56,10 +53,13 @@ export default function Home() {
         </select>
       </div>
 
-      <div className="clock__face">
-        <div id="hour" className="hand hand--hours" />
-        <div id="minutes" className="hand hand--minutes" />
-        <div id="seconds" className="hand hand--seconds" />
+      <div className="clock__face rounded-full">
+        <div className="aspect-square h-6 absolute Fmx-auto z-10 bottom-0 top-0 my-auto bg-white rounded-full " />
+        <h3 className="text-white text-2xl font-bold ">12</h3>
+        <h3 className="text-white font-bold text-2xl bottom-0 absolute ">06</h3>
+        <div id="hour" className="hand hand--hours rounded-full" />
+        <div id="minutes" className="hand hand--minutes rounded-full" />
+        <div id="seconds" className="hand hand--seconds rounded-full" />
       </div>
     </div>
   );

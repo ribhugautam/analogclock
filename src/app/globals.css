@@ -4,26 +4,16 @@
 
 .hand {
   height: 140px;
-  width: 4px;
-  transform-origin: center bottom;
+  width: 6px;
+  transform-origin: bottom;
   transform: rotate(0deg);
   position: absolute;
 }
 
-.clock {
-  background-color: #001219;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-}
-
 .clock__face {
-  border: 3px solid white;
+  border: 8px solid white;
   width: 300px;
   height: 300px;
-  border-radius: 50%;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -36,11 +26,11 @@
 
 .hand--minutes {
   background: #e9d8a6;
-  width: 2px;
+  width: 5px;
 }
 
 .hand--seconds {
   background: #94d2bd;
-  width: 1px;
+  width: 2px;
   transform: rotate(360deg);
 }
