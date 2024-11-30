@@ -3,34 +3,35 @@
 @tailwind utilities;
 
 .hand {
-  height: 140px;
-  width: 6px;
-  transform-origin: bottom;
+  height: 9rem;
   transform: rotate(0deg);
   position: absolute;
 }
 
 .clock__face {
-  border: 8px solid white;
-  width: 300px;
-  height: 300px;
+  border: 1rem solid rgb(0, 0, 0);
+  width: 20rem;
+  height: 20rem;
   display: flex;
-  align-items: flex-start;
   justify-content: center;
+  align-items: flex-start;
   position: relative;
+  box-shadow: rgb(4, 0, 255) 0 0 1rem;
 }
 
 .hand--hours {
-  background: #ae2012;
+  background: #ff1100;
+  width: 0.4rem;
 }
 
 .hand--minutes {
-  background: #e9d8a6;
-  width: 5px;
+  background: #ff1100;
+  width: 0.3rem;
 }
 
 .hand--seconds {
-  background: #94d2bd;
-  width: 2px;
+  background: #ffffff;
+  width: 0.1rem;
+  box-shadow: rgb(4, 0, 255) 0 0 1rem;
   transform: rotate(360deg);
 }
