@@ -16,17 +16,27 @@
   justify-content: center;
   align-items: flex-start;
   position: relative;
-  box-shadow: rgb(4, 0, 255) 0 0 1rem;
+  box-shadow: rgb(255, 0, 0) 0 0 1rem;
+  animation: breathing 1s infinite ease-in-out alternate both running;
+}
+
+@keyframes breathing {
+  0% {
+    box-shadow: rgb(255, 0, 0) 0 0 1rem;
+  }
+  100% {
+    box-shadow: rgb(255, 0, 0) 0 0 2rem;
+  }
 }
 
 .hand--hours {
-  background: #ff1100;
+  background: #ffffff;
   width: 0.4rem;
   box-shadow: rgb(255, 0, 0) 0 0 1rem, inset rgb(255, 0, 0) 0 0 1rem;
 }
 
 .hand--minutes {
-  background: #ff0000;
+  background: #ffffff;
   width: 0.3rem;
   box-shadow: rgb(255, 0, 0) 0 0 1rem, inset #ff0000 0 0 1rem;
 }
