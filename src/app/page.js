@@ -57,8 +57,10 @@ export default function Home() {
       </div>
 
       <div className="clock__face rounded-full">
-        <div className="aspect-square h-[1.2rem] absolute Fmx-auto z-10 bottom-0 top-0 my-auto bg-[#ffffff] shadow-[0_0_1rem_#172acf] rounded-full " />
+        <div className="aspect-square h-[1.2rem] absolute Fmx-auto z-10 bottom-0 top-0 my-auto bg-[#ffffff] shadow-[0_0_1rem_#ff0000] rounded-full " />
         <h3 className="text-white text-2xl font-bold ">12</h3>
+        <h3 className="text-white font-bold text-2xl my-auto mx-auto right-0  top-[44%] absolute ">03</h3>
+        <h3 className="text-white font-bold text-2xl my-auto mx-auto left-0  top-[44%] absolute ">09</h3>
         <h3 className="text-white font-bold text-2xl bottom-0 absolute ">06</h3>
         <div id="hour" className="hand hand--hours origin-bottom rounded-full" />
         <div id="minutes" className="hand hand--minutes origin-bottom rounded-full" />

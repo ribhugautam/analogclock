@@ -28,12 +28,12 @@
 .hand--minutes {
   background: #ff0000;
   width: 0.3rem;
-  box-shadow: rgb(255, 0, 0) 0 0 1rem, inset rgb(255, 0, 0) 0 0 1rem;
+  box-shadow: rgb(255, 0, 0) 0 0 1rem, inset #ff0000 0 0 1rem;
 }
 
 .hand--seconds {
   background: #ffffff;
   width: 0.1rem;
-  box-shadow: rgb(255, 255, 255) 0 0 1rem, inset rgb(255, 255, 255) 0 0 1rem;
+  box-shadow: rgb(255, 0, 0) 0 0 1rem, inset rgb(255, 255, 255) 0 0 1rem;
   transform: rotate(360deg);
 }
